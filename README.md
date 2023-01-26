@@ -2,26 +2,51 @@
 ## AIM:
 To write a python program for copying the contents from one file to another file.
 ## EQUIPEMENT'S REQUIRED: 
-PC
-Anaconda - Python 3.7
+PC  Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
+Get the file name and location from the user.
 
-### Step 2: 
- 
-### Step 3: 
+### Step 2:
+Give a new file name to create a copy of a file content.
 
-### Step 4:  
+### Step 3:
+Read the file and close the file.
 
-### Step 5: 
+### Step 4:
+Now write the content in the new file.
 
-### Step 6: 
+### Step 5:
+When done print "File copied successfully".
+
+### Step 6:
+End of the program.
 
 ## PROGRAM:
+```
+#Developed by: POOJA A
+#RegisterNumber: 22007907
+
+print("Enter the Name of Source File: ")
+sFile = input()
+print("Enter the Name of Target File: ")
+tFile = input()
+
+fileHandle = open(sFile, "r")
+texts = fileHandle.readlines()
+fileHandle.close()
+
+fileHandle = open(tFile, "w")
+for s in texts:
+    fileHandle.write(s)
+fileHandle.close()
+
+print("\nFile Copied Successfully!")
+``` 
 
 ### OUTPUT:
-
-
+![](Screenshot%20from%202023-01-26%2012-52-13.png)
+![](Screenshot%20from%202023-01-26%2012-56-02.png)
 
 ## RESULT:
 Thus the program is written to copy the contents from one file to another file.
